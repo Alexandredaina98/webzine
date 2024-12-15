@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extract from Confessions</title>
     <style>
+        body, * {
+        cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #85ff7f;
@@ -31,10 +34,10 @@
 
         h2 {
             font-family: 'times new roman', sans-serif;
-            font-size: 21.5px;
+            font-size: 25.5px;
             font-style: italic;
             color: #85ff7f;
-            text-shadow: -2px 2px 0px #000000;
+            text-shadow: -2px 2px 2px #000000;
             margin-top: 20px;
             text-align: center;
             width: 100%;
@@ -47,19 +50,18 @@
             width: 100%;
             box-sizing: border-box;
             padding-top: 10px; 
-
+            cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
             padding-bottom: 10px; 
-            border: #000000 solid 5px;
         }
 
         .text-container {
             background: #000000;
             padding: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            width: 45%; /* Each container takes 40% of the width */
             text-align: justify;
             line-height: 1.6;
             color: #85ff7f;
+            cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
         }
 
         .line {
@@ -91,36 +93,54 @@
             font-family: 'Impact', sans-serif;
             font-size: 14px;
         }
+
+        .box {
+            background-color: #000000; /* Box background color */
+            padding: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            color: #85ff7f;
+            border: #85ff7f solid 10px;
+            cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
+        }
+        #boxc {
+            position: relative;
+            top: 60px;
+            background-color: #000000; /* Box background color */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <h1>Extract from Confessions</h1>
     <div class="container">
         <div class="text-container" id="fr">
-            <p class="line font-1">Je sentis avant de partir une vive émotion.</p>
-            <p class="line font-2">L'idée de m'éloigner pour jamais de l'endroit où j'avais passé toute mon enfance,</p>
-            <p class="line font-3">d'aller chercher au loin une fortune incertaine,</p>
-            <p class="line font-4">de me trouver seul, sans appui, sans guide,</p>
-            <p class="line font-5">livré à ma conduite et à ma prudence, me faisait trembler.</p>
-            <p class="line font-1">Mais cette inquiétude même avait je ne sais quoi d'attrayant qui relevait mon courage.</p>
-            <p class="line font-2">Je me disais : « Je vais connaître enfin la vie,</p>
-            <p class="line font-3">je vais voir le monde, me mêler aux hommes, apprendre à me conduire parmi eux. »</p>
-            <p class="line font-4">Ce moment décida du caractère de mon esprit.</p>
-            <p class="line font-5">L'éveil de la réflexion s'annonça comme un nouveau jour à ma vie.</p>
-            <p class="line font-1">Je partis avec une espérance qui me semblait tout assurer.</p>
+            <div class="box"><p class="line font-1">Je sentis avant de partir une vive émotion.</p></div>
+            <div class="box"><p class="line font-2">L'idée de m'éloigner pour jamais de l'endroit où j'avais passé toute mon enfance,</p></div>
+            <div class="box"><p class="line font-3">d'aller chercher au loin une fortune incertaine,</p></div>
+            <div class="box"><p class="line font-4">de me trouver seul, sans appui, sans guide,</p></div>
+            <div class="box"><p class="line font-5">livré à ma conduite et à ma prudence, me faisait trembler.</p></div>
+            <div class="box"><p class="line font-1">Mais cette inquiétude même avait je ne sais quoi d'attrayant qui relevait mon courage.</p></div>
+            <div class="box"><p class="line font-2">Je me disais : « Je vais connaître enfin la vie,</p></div>
+            <div class="box"><p class="line font-3">je vais voir le monde, me mêler aux hommes, apprendre à me conduire parmi eux. »</p></div>
+            <div class="box"><p class="line font-4">Ce moment décida du caractère de mon esprit.</p></div>
+            <div class="box"><p class="line font-5">L'éveil de la réflexion s'annonça comme un nouveau jour à ma vie.</p></div>
+            <div class="box"><p class="line font-1">Je partis avec une espérance qui me semblait tout assurer.</p></div>
+            
+            <div ><img id="boxc" src="rou.png"></div>
         </div>
         <div class="text-container" id="en">
-            <p class="line font-1">I felt a strong emotion before leaving.</p>
-            <p class="line font-2">The idea of forever leaving the place where I had spent all my childhood,</p>
-            <p class="line font-3">to seek an uncertain fortune far away,</p>
-            <p class="line font-4">to find myself alone, without support, without guidance,</p>
-            <p class="line font-5">left to my own conduct and prudence, made me tremble.</p>
-            <p class="line font-1">But even this anxiety had a certain allure that raised my courage.</p>
-            <p class="line font-2">I told myself: “I will finally experience life,</p>
-            <p class="line font-3">I will see the world, mingle with people, learn to navigate among them.”</p>
-            <p class="line font-4">This moment defined the character of my spirit.</p>
-            <p class="line font-5">The awakening of reflection appeared as a new day in my life.</p>
-            <p class="line font-1">I left with a hope that seemed to assure me of everything.</p>
+            <div class="box"><p class="line font-1">I felt a strong emotion before leaving.</p></div>
+            <div class="box"><p class="line font-2">The idea of forever leaving the place where I had spent all my childhood,</p></div>
+            <div class="box"><p class="line font-3">to seek an uncertain fortune far away,</p></div>
+            <div class="box"><p class="line font-4">to find myself alone, without support, without guidance,</p></div>
+            <div class="box"><p class="line font-5">left to my own conduct and prudence, made me tremble.</p></div>
+            <div class="box"><p class="line font-1">But even this anxiety had a certain allure that raised my courage.</p></div>
+            <div class="box"><p class="line font-2">I told myself: “I will finally experience life,</p></div>
+            <div class="box"><p class="line font-3">I will see the world, mingle with people, learn to navigate among them.”</p></div>
+            <div class="box"><p class="line font-4">This moment defined the character of my spirit.</p></div>
+            <div class="box"><p class="line font-5">The awakening of reflection appeared as a new day in my life.</p></div>
+            <div class="box"><p class="line font-1">I left with a hope that seemed to assure me of everything.</p></div>
         </div>
     </div>
     <h2>Jean-Jacques Rousseau</h2>

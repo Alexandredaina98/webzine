@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interview</title>
     <style>
+        body, * {
+            cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
+        }
+
         body {
             font-family: 'Courier New', monospace;
             background-color: #000000;
             color: #ffffff;
             margin: 0;
             line-height: 1.8;
-            cursor: url('fu.png'),url('fu.png'), pointer !important; 
         }
 
         .container {
@@ -25,6 +28,8 @@
         }
 
         h1 {
+            position: relative;
+            left: 10%;
             font-family: 'Impact', sans-serif;
             text-align: center;
             color: #ffe062;
@@ -35,7 +40,57 @@
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
             margin-top: 0px;
             margin-bottom: 0px;
+            width: 70%;
         }
+
+        h1::before,
+        h1::after {
+            content: "Interview"; 
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #000000; /* Darker shadow-like color */
+        }
+
+        h1::before {
+            left: 50px; /* Horizontal offset */
+            top: 50px; /* Vertical offset */
+
+        }
+
+        h1::after {
+            left: -50px; /* Horizontal offset */
+            top: -50px; /* Vertical offset */
+        }
+
+        h1.duplicate {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: -2; /* Further behind */
+            color: rgba(0, 0, 0, 0.5); /* Slightly transparent shadow */
+        }
+        h1.layer-1 {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            color: rgba(0, 0, 0, 0.5); /* Slightly transparent shadow */
+        }
+
+        h1.layer-2 {
+            position: absolute;
+            top: -20px;
+            left: 200px;
+            color: #000000;
+        }
+
+        h1.layer-3 {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            color: rgba(0, 0, 0, 0.3); /* Fainter shadow layer */
+        }
+
 
         h2 {
             font-family: 'Impact', sans-serif;
@@ -50,6 +105,8 @@
             font-size: 18px;
             margin-bottom: 15px;
         }
+
+        /*#big {height: 350px; width: 800px;} */
 
         .question {
             font-family: 'Impact', sans-serif;
@@ -69,8 +126,6 @@
             color: #ffe062;
             font-size: 18px;
             margin-bottom: 20px;
-
-            cursor: url('fu.png'),url('fu.png'), pointer !important; 
         }
 
         .highlight {
@@ -90,8 +145,10 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="layer-1">Interview</h1>
+        <h1 class="layer-2">Interview</h1>
+        <h1 class="layer-3">Interview</h1>
         <h1>Interview</h1>
-
         <h2>Introduction</h2>
         <p class="answer">
             <span class="highlight">Katarzyna Bednarz:</span> I work in a school and deal with 15-year-olds in my day-to-day job. In addition, I am a child and adolescent psychotherapist. I often meet with individuals in crisis, around the ages of 15-16, either in my private practice or through association-driven initiatives supporting youth. This forms the basis for the questions I’ll address, you know?
