@@ -1,0 +1,56 @@
+/* Apply styles */
+body, * {
+    cursor: url('mouse_pointer_fist_thumb.png'), pointer !important; /* Force custom cursor globally */
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0; /* Use your own custom cursor image */
+    background-image: url('frontpageimage.png');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-color: rgb(255, 77, 77);
+    height: 100vh;
+}
+h1 {
+    margin-top: 300px;
+    color: #000000; /* Ensure text is readable on the background */
+}
+
+.button-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #000000;
+    background-color:  rgb(255, 77, 77); 
+    border: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 1); /* Add some depth to the buttons */
+}
+
+.button:hover {
+    background-color: rgba(255, 253, 253, 0.9); /* Slightly darker color on hover */
+}
+.gif-container img {
+    width: 300px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.senter{
+    position: absolute;
+    left: 35vw; 
+    top: 20vh;
+    width : 35vw;
+    height: 24vh;
+}
